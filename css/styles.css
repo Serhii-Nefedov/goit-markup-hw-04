@@ -26,6 +26,7 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  outline: 2px solid tomato;
 }
 
 .image {
@@ -139,10 +140,23 @@ ul {
 
 /* Hero */
 .hero {
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background-color: var(--hero-footer-background-color);
+  height: 600px;
+  max-width: 1600px;
+
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/hero-75.jpg');
+  background-color: #c4c4c4;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero-title {
@@ -198,6 +212,27 @@ ul {
   overflow: hidden;
 }
 
+.features .box::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-color: var(--team-background-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.features .box:nth-child(1)::before {
+  background-image: url();
+}
+.features .box:nth-child(2)::before {
+  background-image: url();
+}
+.features .box:nth-child(3)::before {
+  background-image: url();
+}
+.features .box:nth-child(4)::before {
+  background-image: url();
+}
 .features .box + .box {
   margin-left: 30px;
 }
@@ -257,9 +292,11 @@ ul {
 /* Team */
 
 .team {
+  padding: 94px 200px;
+  text-align: center;
+
   background-color: var(--team-background-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  outline: 2px solid greenyellow;
 }
 
 .team .card {
@@ -294,16 +331,42 @@ ul {
 }
 .card-cocntent {
   padding: 30px;
+
   background-color: var(--backrgound-color);
+
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
 }
 
+/*Clients*/
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients .list {
+  display: flex;
+}
+
+.clients .section-title {
+  margin-bottom: 50px;
+}
+.client-card {
+  width: 170px;
+  height: 90px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.client-card + .client-card {
+  margin-left: 30px;
+}
 /* Footer */
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 200px;
   background-color: var(--hero-footer-background-color);
+  outline: 2px solid tomato;
 }
 
 .studio-foot-logo {
