@@ -51,6 +51,7 @@ ul {
 .contacts,
 .list,
 .adress,
+.footer-social,
 .filters,
 .galery {
   margin: 0;
@@ -222,16 +223,28 @@ ul {
 }
 
 .features .box:nth-child(1)::before {
-  background-image: url();
+  background-image: url(../images/antenna.svg);
+  background-repeat: no-repeat;
+  background-size: 70px;
+  background-position: center;
 }
 .features .box:nth-child(2)::before {
-  background-image: url();
+  background-image: url(../images/clock.svg);
+  background-repeat: no-repeat;
+  background-size: 70px;
+  background-position: center;
 }
 .features .box:nth-child(3)::before {
-  background-image: url();
+  background-image: url(../images/diagram.svg);
+  background-repeat: no-repeat;
+  background-size: 70px;
+  background-position: center;
 }
 .features .box:nth-child(4)::before {
-  background-image: url();
+  background-image: url(../images/astronaut.svg);
+  background-repeat: no-repeat;
+  background-size: 70px;
+  background-position: center;
 }
 .features .box + .box {
   margin-left: 30px;
@@ -364,11 +377,20 @@ ul {
 }
 /* Footer */
 .footer {
-  padding: 60px 200px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--hero-footer-background-color);
+  width: 1600px;
   outline: 2px solid tomato;
 }
-
+.contacts-container {
+  min-width: 231px;
+  margin-left: 215px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  outline: 2px solid tomato;
+}
 .studio-foot-logo {
   color: var(--logo-web-studio-color);
 }
@@ -393,6 +415,7 @@ ul {
   font-size: 14px;
   line-height: 1.71;
 }
+
 .adress .link:hover,
 .contact-link:hover {
   color: var(--accent-color);
@@ -402,6 +425,30 @@ ul {
   color: var(--accent-color);
 }
 
+.social-container {
+  margin-top: 72px;
+  margin-left: 70px;
+  margin-right: auto;
+  margin-bottom: ;
+  width: 207px;
+  outline: 2px solid tomato;
+}
+.social-subtitle {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--logo-web-studio-color);
+}
+.social-link {
+  display: block;
+}
 /* Portfolio styles*/
 
 .projects {
