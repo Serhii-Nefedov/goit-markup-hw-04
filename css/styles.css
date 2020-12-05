@@ -366,6 +366,8 @@ ul {
   margin-bottom: 50px;
 }
 .client-card {
+  display: block;
+
   width: 170px;
   height: 90px;
 
@@ -375,6 +377,21 @@ ul {
 .client-card + .client-card {
   margin-left: 30px;
 }
+
+.clients .link {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20.77px;
+  padding-left: 63px;
+  padding-right: 63px;
+}
+.clients .icon {
+  display: block;
+  width: 44.27px;
+  height: 49.23px;
+  fill: red;
+}
+
 /* Footer */
 .footer {
   display: flex;
@@ -449,14 +466,7 @@ ul {
 .social-link {
   display: block;
 }
-.client-link {
-  display: block;
-}
-.icon {
-  display: block;
-  width: 44px;
-  height: 49px;
-}
+
 /* Portfolio styles*/
 
 .projects {
