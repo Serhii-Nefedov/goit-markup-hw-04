@@ -9,6 +9,7 @@
   --logo-studio-color: #000000;
   --logo-web-studio-color: #ffffff;
   --backrgound-color: #ffffff;
+  --client-icon-color: #afb1b8;
 }
 body {
   width: 1600px;
@@ -358,40 +359,63 @@ ul {
   padding-bottom: 94px;
 }
 
+.clients .section-title {
+  margin-bottom: 50px;
+}
 .clients .list {
   display: flex;
 }
 
-.clients .section-title {
-  margin-bottom: 50px;
-}
-.client-card {
-  display: block;
-
-  width: 170px;
-  height: 90px;
-
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-}
 .client-card + .client-card {
   margin-left: 30px;
 }
 
-.clients .link {
-  display: block;
-  padding-top: 20px;
-  padding-bottom: 20.77px;
-  padding-left: 63px;
-  padding-right: 63px;
+.client-card .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+
+  color: var(--client-icon-color);
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
-.clients .icon {
-  display: block;
-  width: 44.27px;
-  height: 49.23px;
-  fill: red;
+.client-card .link:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
+.client-icon {
+  display: block;
+  fill: currentColor;
+}
+
+.client-icon.icon-first {
+  width: 44.27px;
+  height: 49.23px;
+}
+.client-icon.icon-second {
+  width: 40px;
+  height: 52px;
+}
+.client-icon.icon-third {
+  width: 41px;
+  height: 42.6px;
+}
+.client-icon.icon-fourth {
+  width: 79.66px;
+  height: 42.02px;
+}
+.client-icon.icon-fifth {
+  width: 59px;
+  height: 47px;
+}
+.client-icon.icon-sixth {
+  width: 88.48px;
+  height: 45.44px;
+}
 /* Footer */
 .footer {
   display: flex;
