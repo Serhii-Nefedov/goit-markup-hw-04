@@ -35,8 +35,16 @@
         </nav>
 
         <ul class="contacts">
-          <li class="item"><a href="" class="link">info@devstudio.com</a></li>
-          <li class="item"><a href="" class="link">+38 096 111 11 11</a></li>
+          <li class="item"><a class="link" href="">
+              <svg class="mail-icon">
+                <use href="./images/symbol-defs.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a></li>
+          <li class="item"><a class="link" href="">
+              <svg class="contacts-icon">
+                <use href="./images/symbol-defs.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a></li>
         </ul>
       </div>
     </header>
@@ -216,18 +224,55 @@
 
     <!--Footer-->
     <footer class="footer">
+    
       <div class="container">
-        <a href="" class="logo-foot"
-          ><span class="web-logo">Web</span
-          ><span class="studio-foot-logo">Studio</span></a
-        >
-        <address>
-          <ul class="adress">
-            <li><a href="" class="link">г. Киев, пр-т Леси Украинки, 26</a></li>
-            <li><a href="" class="contact-link">info@example.com</a></li>
-            <li><a href="" class="contact-link">+38 099 111 11 11</a></li>
+    
+        <div class="contacts-container">
+          <a href="" class="logo-foot"><span class="web-logo">Web</span><span class="studio-foot-logo">Studio</span></a>
+          <address>
+            <ul class="adress">
+              <li><a href="" class="link">г. Киев, пр-т Леси Украинки, 26</a></li>
+              <li><a href="" class="contact-link">info@example.com</a></li>
+              <li><a href="" class="contact-link">+38 099 111 11 11</a></li>
+            </ul>
+          </address>
+        </div>
+    
+        <!--Footer social links-->
+    
+        <div class="social-container">
+    
+          <p class="social-subtitle">Присоединяйтесь</p>
+    
+          <ul class="footer-social">
+    
+            <li class="footer-box"><a class="link" href="" aria-label="Instagram link">
+                <span class="title-hidden">Instagram</span>
+                <svg class="footer-icon">
+                  <use href="./images/symbol-defs.svg#instagramfoot"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-box"><a class="link" href="" aria-label="Twitter link">
+                <span class="title-hidden">Twitter</span>
+                <svg class="footer-icon">
+                  <use href="./images/symbol-defs.svg#twitterfoot"></use>
+                </svg>
+              </a></li>
+            <li class="footer-box"><a class="link" href="" aria-label="Facebooke link">
+                <span class="title-hidden">Facebooke</span>
+                <svg class="footer-icon">
+                  <use href="./images/symbol-defs.svg#facebookfoot"></use>
+                </svg>
+              </a></li>
+            <li class="footer-box"><a class="link" href="" aria-label="Linkedin link">
+                <span class="title-hidden">Linkedin</span>
+                <svg class="footer-icon">
+                  <use href="./images/symbol-defs.svg#linkedinfoot"></use>
+                </svg>
+              </a></li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
