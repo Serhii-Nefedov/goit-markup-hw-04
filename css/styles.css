@@ -13,7 +13,9 @@
   --footer-icon-background-color: rgba(255, 255, 255, 0.1);
 }
 body {
-  width: 1600px;
+  /* width: 1600px; */
+  margin-left: auto;
+  margin-right: auto;
 
   color: var(--title-text-color);
   background-color: var(--backrgound-color);
@@ -23,12 +25,11 @@ body {
 }
 
 .container {
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: auto;
+  margin-right: auto;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
 }
 
 .image {
@@ -159,12 +160,11 @@ ul {
 
 /* Hero */
 .hero {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 200px 452px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
   height: 600px;
-  max-width: 1600px;
+  /*  max-width: 1600px; */
 
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -324,11 +324,11 @@ ul {
 /* Team */
 
 .team {
-  padding: 94px 215px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   text-align: center;
 
   background-color: var(--team-background-color);
-  outline: 2px solid greenyellow;
 }
 
 .team .card {
@@ -485,11 +485,8 @@ ul {
 }
 /* Footer */
 .footer {
-  margin-left: auto;
-  margin-right: auto;
   background-color: var(--hero-footer-background-color);
-  width: 1600px;
-  outline: 2px solid tomato;
+  /*  width: 1600px; */
 }
 
 .footer .container {
@@ -499,8 +496,7 @@ ul {
   align-items: baseline;
 }
 .contacts-container {
-  width: 231px;
-  outline: 2px solid tomato;
+  min-width: 231px;
 }
 .studio-foot-logo {
   color: var(--logo-web-studio-color);
@@ -538,8 +534,7 @@ ul {
 
 .social-container {
   margin-left: 70px;
-  width: 207px;
-  outline: 2px solid tomato;
+  min-width: 207px;
 }
 .social-subtitle {
   margin-top: 0;
@@ -597,6 +592,10 @@ ul {
 .projects {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.portfolio-header {
+  border-bottom: 1px solid #ececec;
 }
 
 .filters {
@@ -700,9 +699,4 @@ ul {
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   box-sizing: border-box;
-}
-
-.portfolio-header {
-  width: 1600px;
-  border-bottom: 1px solid #ececec;
 }
